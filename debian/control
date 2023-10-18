@@ -11,7 +11,6 @@ Build-Depends: debhelper-compat (= 13)
  , dh-sequence-nodejs
  , mocha <!nocheck>
  , node-ms <!nocheck>
- , nodejs
 Standards-Version: 4.6.0
 Homepage: https://github.com/visionmedia/debug
 Vcs-Git: https://salsa.debian.org/js-team/node-debug.git
@@ -20,10 +19,8 @@ Rules-Requires-Root: no
 
 Package: node-debug
 Architecture: all
-Depends:
- ${misc:Depends}
+Depends: ${misc:Depends}
  , node-ms
- , nodejs
 Provides: ${nodejs:Provides}
 Multi-Arch: foreign
 Description: small debugging utility for Node.js
